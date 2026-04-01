@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>DevBlog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+
+<div class="layout">
+
+    <!-- ESQUERDA -->
+    <aside class="sidebar">
+        <div id="perfil"></div>
+    </aside>
+
+    <!-- CENTRO -->
+    <main class="feed">
+
+        <div class="criarPost">
+            <textarea id="postTexto" placeholder="Compartilhe seu aprendizado..."></textarea>
+            <button onclick="criarPost()">Publicar</button>
+        </div>
+
+        <div id="posts"></div>
+
+    </main>
+
+    <!-- DIREITA -->
+    <aside class="right">
+        <h3>Dicas Dev 🚀</h3>
+        <p>Compartilhe aprendizados!</p>
+    </aside>
+
+</div>
+
+<header class="topbar">
+    <div class="logoArea">
+        <img src="logo.png" class="logoTop">
+    </div>
+
+    <button onclick="logout()" class="btnSair">Sair</button>
+</header>
+
+<script src="script.js"></script>
+</body>

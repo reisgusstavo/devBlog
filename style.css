@@ -1,0 +1,222 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* IMPORTANTE */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= LOGIN / REGISTRO ================= */
+body.auth {
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* BOX CENTRAL */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* BOTÕES PADRÃO */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #7209b7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #560bad;
+}
+
+/* ================= HEADER ================= */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #7209b7, #560bad);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* LOGO */
+.logoTop {
+    height: 50px;
+    width: auto;
+}
+
+/* BOTÃO SAIR */
+.btnSair {
+    background: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    white-space: nowrap;
+}
+
+.btnSair:hover {
+    background: #cc0000;
+}
+
+/* ================= DASHBOARD ================= */
+body.dashboard {
+    background: #f0f2f5;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 90px; /* espaço pro header */
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+}
+
+/* FEED */
+.feed {
+    width: 600px;
+}
+
+/* LADO DIREITO */
+.right {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1000px) {
+    .sidebar,
+    .right {
+        display: none;
+    }
+
+    .feed {
+        width: 100%;
+    }
+}
+
+/* ================= PERFIL ================= */
+.perfilBox {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fotoPerfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ================= CRIAR POST ================= */
+.criarPost {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.criarPost textarea {
+    height: 60px;
+    border: 1px solid #ccc;
+}
+
+/* ================= POSTS ================= */
+.post {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.miniFoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* BOTÕES DO POST */
+.post button {
+    width: auto;
+    background: #eee;
+    color: black;
+    margin-right: 5px;
+}
+
+.post button:hover {
+    background: #ddd;
+}
+
+/* ================= COMENTÁRIOS ================= */
+.comentarios {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.comentarios input {
+    width: 70%;
+    padding: 5px;
+}
+
+.comentarios button {
+    width: auto;
+    padding: 5px;
+}

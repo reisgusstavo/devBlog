@@ -17,11 +17,18 @@
     <!-- CENTRO -->
     <main class="feed">
 
-        <div class="criarPost">
-            <textarea id="postTexto" placeholder="Compartilhe seu aprendizado..."></textarea>
-            <button onclick="criarPost()">Publicar</button>
-        </div>
+       <div class="criarPost">
+    <textarea id="postTexto" placeholder="Compartilhe seu aprendizado..."></textarea>
 
+    <input type="file" id="postImagem" accept="image/*">
+
+    <button onclick="criarPost()">Publicar</button>
+</div>
+
+        <div class="buscaBox">
+            <input type="text" id="buscaPost" placeholder="🔎 Buscar posts..." onkeyup="buscarPosts()">
+        </div>
+  
         <div id="posts"></div>
 
     </main>

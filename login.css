@@ -1,0 +1,124 @@
+/* FUNDO */
+.login-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+}
+
+/* CONTAINER */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ESQUERDA */
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-left h1 {
+    font-size: 40px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.login-left span {
+    color: #4cc9f0;
+}
+
+.login-left img {
+    width: 300px;
+    margin-top: 30px;
+}
+
+/* DIREITA */
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOX LOGIN */
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TÍTULO */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUTS GRANDES */
+.login-box input {
+    width: 100%;
+    padding: 15px; /* MAIOR */
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* BOTÃO PRINCIPAL */
+.login-box button {
+    width: 100%;
+    padding: 15px;
+    background: #1877f2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #166fe5;
+}
+
+/* LINK */
+.link {
+    text-align: center;
+    color: #1877f2;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn-secundario {
+    background: #42b72a;
+    margin-top: 10px;
+}
+
+.btn-secundario:hover {
+    background: #36a420;
+}
+
+/* LINHA */
+hr {
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        flex: 1;
+    }
+}
